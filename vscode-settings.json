@@ -1,0 +1,20 @@
+{
+  "editor.formatOnSave": true,
+  "todohighlight.keywords": [
+    "NOTE:",
+    {
+      "text": "NOTE:",
+      "color": "#ff0000",
+      "backgroundColor": "yellow",
+      "overviewRulerColor": "grey"
+    }
+  ],
+  "workbench.colorTheme": "New Moon",
+  "editor.formatOnPaste": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "window.zoomLevel": 1,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false
+}
