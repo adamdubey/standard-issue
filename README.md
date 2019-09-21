@@ -2,4 +2,11 @@
 
 A repository of config files, dotfiles, themes, etc.
 
-- vscode-settings.json: refer to the [vscode-settings guide](https://code.visualstudio.com/docs/getstarted/settings)
+## settings, profiles, gitignore
+
+- [vscode-settings](https://code.visualstudio.com/docs/getstarted/settings)
+- [.gitignore](reference-guides/.gitignore)
+
+## reference-guides
+
+- [git-reference](reference-guides/git-reference.md)
