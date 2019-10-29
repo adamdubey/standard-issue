@@ -1,6 +1,5 @@
 # RST reference
 
-
 ## To add images to the document
 
 ```python
@@ -8,7 +7,7 @@
    :align: center
    :alt: Alternate text description of img
 
-   Fig. <alt-text-name>
+   Alternate-Text-Description-of-IMG
 ```
 
 ## To support "Fancy Notes"
@@ -16,7 +15,36 @@
 .. note:: <text-string>
 ```
 
-## To address syntax highlighting (really just disable the built-in rendering)
+## To address syntax highlighting
 ```python
 .. highlight:: none
+```
+
+## Headings
+```python
+H1 => # (with overline)
+H2 => * (with overline)
+H3 => =
+H4 => -
+H5 => ^
+H6 => "
+
+##########
+H1 Example
+##########
+
+H2 Example
+**********
+
+H3 Example
+==========
+
+H4 Example
+----------
+
+H5 Example
+^^^^^^^^^^
+
+H6 Example
+""""""""""
 ```

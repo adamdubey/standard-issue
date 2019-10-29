@@ -10,3 +10,6 @@ A repository of config files, dotfiles, themes, etc.
 ## reference-guides
 
 - [git-reference](reference-guides/git-reference.md)
+- [rst-reference](reference-guides/rst-reference.md)
+- [npm-package-dev-reference](reference-guides/npm-package-development-reference.md)
+
