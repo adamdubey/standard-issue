@@ -12,4 +12,4 @@ A repository of config files, dotfiles, themes, etc.
 - [git-reference](reference-guides/git-reference.md)
 - [rst-reference](reference-guides/rst-reference.md)
 - [npm-package-dev-reference](reference-guides/npm-package-development-reference.md)
-
+- [virtual-env-reference](reference-guides/virtual-env-reference.md)
