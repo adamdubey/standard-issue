@@ -27,7 +27,8 @@ A repository of config files, dotfiles, themes, etc.
 **`.zshrc`:**
 - When used with `iTerm2`, make sure you enable `use built-in Powerline glyphs` located here: `Preferences>Profiles>Text>Text Rendering`
 
-**`homebrew + OS Catalina`**
+**`homebrew + OS Catalina`:**
 - `$ brew prune` is now obsolete
 - `$ brew style` helps to resolve some error messages that will begin to appear as soon as `$ brew doctor` has completed running.
+- If your env is totally FUBAR'd, try `$ brew update-reset` to fix it.
 
