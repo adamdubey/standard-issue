@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Homebrew
-alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 
 # Nav shortcuts
 alias p="cd ~/projects"
@@ -110,3 +110,5 @@ alias d="cd ~/Desktop"
 
 # Git specific shortcuts
 alias gco="git checkout"
+alias gpp="git pull"
+
