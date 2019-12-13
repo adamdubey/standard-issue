@@ -10,7 +10,7 @@ A repository of config files, dotfiles, themes, etc.
 - [.gitignore](reference-guides/.gitignore)
 - [.bash_profile](reference-guides/.bash_profile)
 - [.zshrc](reference-guides/.zshrc)*
-
+- [.vimrc](.vimrc)
 ---
 
 ## reference-guides
