@@ -1,0 +1,44 @@
+version: "3"
+services:
+  #####PORTAINER#####
+  portainer:
+    container_name: portainer
+    image: portainer/portainer
+    volumes:
+      - portainer_data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+    ports:
+      - "9000:9000"
+  #####INFLUXDB#####
+  influxdb:
+    container_name: influxdb
+    image: influxdb:latest
+    volumes:
+      - influxdb_data:/var/lib/influxdb
+    restart: always
+    ports:
+      - "8086:8086"
+  #####COOKBOOK#####
+  cookbook:
+    container_name: cookbook
+    build:
+      context: ./chef-adam-cookbook/
+      dockerfile: Dockerfile
+    ports:
+     - "9001:9001"
+  #####HASS/HA#####
+  hass:
+    container_name: home-assistant
+    image: homeassistant/home-assistant
+    volumes:
+     - hass_config:/config
+    restart: always
+    ports:
+     - "8123:8123"
+
+  #####VOLUMES#####
+volumes:
+  portainer_data:
+  influxdb_data:
+  hass_config:
