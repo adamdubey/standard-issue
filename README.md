@@ -1,6 +1,8 @@
 # standard issue
 
-A repository of config files, dotfiles, themes, etc.
+_Ready-Up Boot!_
+
+A repository of config files, dotfiles, themes, scripts, etc.
 
 ---
 
@@ -19,6 +21,12 @@ A repository of config files, dotfiles, themes, etc.
 - [rst-reference](reference-guides/rst-reference.md)
 - [npm-package-dev-reference](reference-guides/npm-package-development-reference.md)
 - [virtual-env-reference](reference-guides/virtual-env-reference.md)
+
+---
+
+## scripts
+
+- [pull.sh](scripts/pull.sh)
 
 ---
 
