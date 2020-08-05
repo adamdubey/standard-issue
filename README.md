@@ -11,8 +11,9 @@ A repository of config files, dotfiles, themes, scripts, etc.
 - [vscode-settings](https://code.visualstudio.com/docs/getstarted/settings)
 - [.gitignore](reference-guides/.gitignore)
 - [.bash_profile](reference-guides/.bash_profile)
-- [.zshrc](reference-guides/.zshrc)*
+- [.zshrc](reference-guides/.zshrc)\*
 - [.vimrc](.vimrc)
+
 ---
 
 ## reference-guides
@@ -27,16 +28,23 @@ A repository of config files, dotfiles, themes, scripts, etc.
 ## scripts
 
 - [pull.sh](scripts/pull.sh)
+- [recon.sh](scripts/recon.sh)\*
+- [ip-sweep.sh](scripts/ip-sweep.sh)
 
 ---
 
-## Notes*
+## Notes\*
 
 **`.zshrc`:**
+
 - When used with `iTerm2`, make sure you enable `use built-in Powerline glyphs` located here: `Preferences>Profiles>Text>Text Rendering`
 
+**`recon.sh`:**
+
+- Use this script inside of a Kali Linux workstation! Example usage: `$ ./recon.sh 10.0.3.42`
+
 **`homebrew + OS Catalina`:**
+
 - `$ brew prune` is now obsolete
 - `$ brew style` helps to resolve some error messages that will begin to appear as soon as `$ brew doctor` has completed running.
 - If your env is totally FUBAR'd, try `$ brew update-reset` to fix it.
-
