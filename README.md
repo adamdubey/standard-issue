@@ -2,49 +2,33 @@
 
 _Ready-Up Boot!_
 
-A repository of config files, dotfiles, themes, scripts, etc.
+A repository of machine onboarding scripts, config files, dotfiles, themes, etc.
+
+---
+
+## provisioning & onboarding a new intel-based mac
+
+_**NOTE:** WIP testing OSX 13.0.1 - adding more automation via Makefile._
+
+1. Update OSX default shell: `chsh -s /bin/zsh`
+1. Install XCode CLI Toolkit: `xcode-select --install`
+1. Install oh-my-zsh: `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+1. Install Homebrew: `sh /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+1. Install Brewfile packages: `make brew_bundle`
 
 ---
 
 ## settings, profiles, gitignore
 
-- [vscode-settings](https://code.visualstudio.com/docs/getstarted/settings)
 - [.gitignore](reference-guides/.gitignore)
-- [.bash_profile](reference-guides/.bash_profile)
-- [.zshrc](reference-guides/.zshrc)\*
 - [.vimrc](.vimrc)
+- [vscode-settings](https://code.visualstudio.com/docs/getstarted/settings)
 
 ---
 
 ## reference-guides
 
 - [git-reference](reference-guides/git-reference.md)
-- [rst-reference](reference-guides/rst-reference.md)
 - [npm-package-dev-reference](reference-guides/npm-package-development-reference.md)
+- [rst-reference](reference-guides/rst-reference.md)
 - [virtual-env-reference](reference-guides/virtual-env-reference.md)
-
----
-
-## scripts
-
-- [pull.sh](scripts/pull.sh)
-- [recon.sh](scripts/recon.sh)\*
-- [ip-sweep.sh](scripts/ip-sweep.sh)
-
----
-
-## Notes\*
-
-**`.zshrc`:**
-
-- When used with `iTerm2`, make sure you enable `use built-in Powerline glyphs` located here: `Preferences>Profiles>Text>Text Rendering`
-
-**`recon.sh`:**
-
-- Use this script inside of a Kali Linux workstation! Example usage: `$ ./recon.sh 10.0.3.42`
-
-**`homebrew + OS Catalina`:**
-
-- `$ brew prune` is now obsolete
-- `$ brew style` helps to resolve some error messages that will begin to appear as soon as `$ brew doctor` has completed running.
-- If your env is totally FUBAR'd, try `$ brew update-reset` to fix it.
