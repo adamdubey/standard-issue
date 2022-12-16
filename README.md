@@ -6,9 +6,7 @@ A repository of machine onboarding scripts, config files, dotfiles, themes, etc.
 
 ---
 
-## provisioning & onboarding a new intel-based mac
-
-_**NOTE:** WIP testing OSX 13.0.1 - adding more automation via Makefile._
+## Provisioning & Onboarding
 
 1. Update OSX default shell: `chsh -s /bin/zsh`
 1. Install XCode CLI Toolkit: `xcode-select --install`
@@ -18,7 +16,9 @@ _**NOTE:** WIP testing OSX 13.0.1 - adding more automation via Makefile._
 
 ---
 
-## settings, profiles, gitignore
+## Dotfile Examples
+
+> Examples and templates for various dotfiles
 
 - [.gitignore](reference-guides/.gitignore)
 - [.vimrc](.vimrc)
@@ -26,7 +26,9 @@ _**NOTE:** WIP testing OSX 13.0.1 - adding more automation via Makefile._
 
 ---
 
-## reference-guides
+## Reference Guides
+
+> Handy reference guides
 
 - [git-reference](reference-guides/git-reference.md)
 - [npm-package-dev-reference](reference-guides/npm-package-development-reference.md)
