@@ -4,6 +4,7 @@ brew 'git'
 brew 'wget'
 brew 'docker'
 brew 'postgresql@14'
+brew 'node'
 brew 'pkg-config', link: true
 
 cask 'iterm2'
@@ -16,3 +17,5 @@ cask 'discord'
 cask 'postico'
 cask 'arduino'
 cask 'postman'
+cask 'microsoft-office'
+cask 'inkscape'
