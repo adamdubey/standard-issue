@@ -10,7 +10,7 @@ git init
 git remote add origin git@github.com:your-username/your-repo.git
 git add .
 git commit -am "[Initials][TicketId] Summary of work being performed"
-git push -u origin master
+git push -u origin main
 ```
 
 ## Clone a repo
@@ -32,18 +32,18 @@ git rm -r —-cached file.txt
 
 ## Override entire local directory
 
-If you have some merge conflicts, or accidentally started to make a change to your local directory before pulling the changes from the master, here's how you can revert your local directory to what's on GitHub.
+If you have some merge conflicts, or accidentally started to make a change to your local directory before pulling the changes from the main, here's how you can revert your local directory to what's on GitHub.
 
 ```bash
 git fetch --all
-git reset --hard origin/master
+git reset --hard origin/main
 ```
 
 ## Force a push or pull
 
 ```bash
-git push -f origin master
-git pull -f origin master
+git push -f origin main
+git pull -f origin main
 ```
 
 ## Merging changes from remote pull request with conflicts
@@ -51,8 +51,8 @@ git pull -f origin master
 Make a new branch with their changes.
 
 ```bash
-git checkout -b their-branch master
-git pull their.git master
+git checkout -b their-branch main
+git pull their.git main
 ```
 
 Play with the files and commit them.
@@ -60,15 +60,15 @@ Play with the files and commit them.
 ```bash
 git add files
 git commit -m “Message"
-git push origin master
+git push origin main
 ```
 
 Merge back into your branch.
 
 ```bash
-git checkout master
+git checkout main
 git merge --no-ff <their-branch) (:wq!)
-git push origin master
+git push origin main
 ```
 
 ## Remove branch
@@ -85,36 +85,36 @@ Use `--delete` or `-D` for local.
 git branch --delete branch-name
 ```
 
-## Replace master with contents of another branch
+## Replace main with contents of another branch
 
 ```bash
 git checkout branch-name
-git merge -s ours master
-git checkout master
+git merge -s ours main
+git checkout main
 git merge branch-name
 ```
 
-## Remove all local branches except master
+## Remove all local branches except main
 
 ```bash
-git branch | grep -v "master" | xargs git branch -D
+git branch | grep -v "main" | xargs git branch -D
 ```
 
-More than one branch may be added to the grep. To remove all local branches except "master" and "develop":
+More than one branch may be added to the grep. To remove all local branches except "main" and "develop":
 
 ```bash
-git branch | grep -v "master\|develop" | xargs git branch -D
+git branch | grep -v "main\|develop" | xargs git branch -D
 ```
 
-## Merge new-feature branch into master
+## Merge new-feature branch into main
 
 Merge branches, however I try to favor using automation or just the web interface.
 
 ```bash
-git checkout master
-git pull origin master
+git checkout main
+git pull origin main
 git merge new-feature
-git push origin master
+git push origin main
 ```
 
 ## Switch to branch that exists on origin
